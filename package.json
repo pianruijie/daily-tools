@@ -1,0 +1,64 @@
+{
+  "name": "daily-tools",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development webpack-dev-server --config script/webpack.config.dev.js",
+    "build": "NODE_ENV=production webpack --config script/webpack.config.prod.js",
+    "test": "eslint . --ext .ts --ext .tsx",
+    "lint-fix": "eslint --fix --ext .tsx",
+    "lint-fix-pre": "prettier --config .prettierrc --write './src/*' './src/**/*'",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pianruijie/daily-tools.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pianruijie/daily-tools/issues"
+  },
+  "homepage": "https://github.com/pianruijie/daily-tools#readme",
+  "dependencies": {
+    "@babel/runtime": "^7.23.5",
+    "lodash": "^4.17.21",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.20.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/plugin-proposal-class-properties": "^7.16.7",
+    "@babel/plugin-proposal-decorators": "^7.16.7",
+    "@babel/plugin-transform-regenerator": "^7.16.7",
+    "@babel/plugin-transform-runtime": "^7.16.7",
+    "@babel/preset-env": "^7.16.7",
+    "@babel/preset-react": "^7.16.7",
+    "@babel/preset-typescript": "^7.16.7",
+    "@types/lodash": "^4.14.179",
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@types/react-router": "^5.1.20",
+    "@types/react-router-dom": "^5.3.3",
+    "babel-loader": "^8.2.3",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.6.0",
+    "eslint-config-alloy": "^4.4.0",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "html-webpack-plugin": "^5.5.0",
+    "husky": "^7.0.4",
+    "less-loader": "^10.2.0",
+    "lint-staged": "^12.1.7",
+    "prettier": "^2.5.1",
+    "qs": "^6.10.2",
+    "typescript": "^4.5.4",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.2",
+    "webpack-merge": "^5.8.0"
+  }
+}
