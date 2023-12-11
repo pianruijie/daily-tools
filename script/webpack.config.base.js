@@ -35,14 +35,10 @@ module.exports = {
       }
     ]
   },
-  // resolve: {
-  //   // 支持自动补全的文件后缀
-  //   extensions: ['.ts', '.tsx', '.js'],
-  //   // 路径别名
-  //   alias: {
-  //     '@': path.resolve(__dirname, '../src')
-  //   }
-  // },
+  resolve: {
+    // 支持自动补全的文件后缀
+    extensions: ['.ts', '.tsx', '.js']
+  },
   plugins: [
     new HtmlWebpackPlugin({
       title: 'own-tools',
